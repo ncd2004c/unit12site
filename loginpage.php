@@ -34,6 +34,8 @@ else
 ?>
 </head>
 <body>
+<?php readfile("lib/header.html"); ?>
+<br>
 <form method='POST'>
 User <input type='text' name='155username' value='<?php echoPost("155username"); ?>'><br>
 Password <input type='password' name='155password' value='<?php echoPost("155username"); ?>'><br>
@@ -41,5 +43,7 @@ Password <input type='password' name='155password' value='<?php echoPost("155use
 </form>
 <h2><?php echo $message;?></h2>
 <b>Username:username</b>   <b>Password:password</b>
+<br>
+<?php readfile("lib/footer.html"); ?>
 </body>
 </html>
