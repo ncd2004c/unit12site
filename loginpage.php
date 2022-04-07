@@ -1,7 +1,7 @@
 <html>
 <head>
 <?php
-
+session_start();
 require('lib/phpfunctions.php');
 
 function checkLogin($user, $pass)
@@ -12,7 +12,6 @@ function checkLogin($user, $pass)
                 return False;
 }
 
-session_start();
 
 $message='';
 if (isset($_POST['choice'])) // Have we been here before?
