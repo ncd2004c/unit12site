@@ -1,7 +1,3 @@
-<!--  I honor Parkland's core values by affirming that I have
-followed all academic integrity guidelines for this work.
-Nolan Decker
-CSC-155DR -->
 <html>
 <head>
 <?php
@@ -9,12 +5,16 @@ CSC-155DR -->
 require("lib/phpfunctions.php");
 
 session_start();
+checkcredentials();
+session_destroy();
+header("refresh:5;loginpage.php");
 ?>
 </head>
 <body>
 <?php readfile("lib/header.html"); ?>
 <br>
 <b>Logout Page</b>
+<h1>Goodbye</h1>
 <br>
 <?php readfile("lib/footer.html"); ?>
 </body>
